@@ -44,7 +44,7 @@ flower_env/
 *~
 
 # Data files (too large)
-#/src/data/*
+/src/data/flowers-102
 
 # Temporary files
 temp/
