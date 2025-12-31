@@ -28,7 +28,6 @@ This repository contains a solution for the **AQREIGHT CV Engineer Technical Ass
 │   ├── utils/
 │   │   └── common.py    # Utility functions (logging, seeding)
 │   ├── explain.py       # Explainability tools (Grad-CAM)
-│   └── inference.py     # Inference script
 ├── logs/                # TensorBoard logs
 ├── checkpoints/         # Model checkpoints
 ├── README.md            # Project documentation
@@ -61,12 +60,23 @@ Arguments:
 tensorboard --logdir logs
 ```
 
-### 3. Inference
-To run inference on a single image:
-```bash
-python src/inference.py --image_path path/to/flower.jpg --model_path checkpoints/model_best.pth.tar
-```
-Returns the top-3 predicted classes and their probabilities.
-
-### 4. Evaluation & Explainability
+### 3. Evaluation & Explainability
 Run `notebooks/03_Evaluation_and_Explainability.ipynb` to evaluate the model on the test set and visualize Grad-CAM heatmaps.
+
+### 4. Additional Note
+Due to my limited time and poor time management, I failed to complete the assessment successfully. If I had more time, I would have polished more on:
+
+#### Model Architecture & Training
+- Experiment with more advanced architectures (ResNet50, EfficientNet, Vision Transformers)
+- Implement learning rate scheduling and optimization techniques
+
+#### Production Readiness
+- Complete inference.py implementation (current version is not complete)
+
+#### Documentation & Code Quality
+- Complete configurations system (currently incomplete)
+- Error handling and validation
+- Better code organization and modularity
+
+
+Despite these limitations, the current implementation provides a base foundation with a working end-to-end pipeline, transfer learning with ResNet18, stratified data splitting, early stopping, model checkpointing, TensorBoard logging, and Grad-CAM explainability features.
