@@ -35,8 +35,9 @@ This repository contains a solution for the **AQREIGHT CV Engineer Technical Ass
 ```
 
 ## Setup
-1.  **Environment**: Ensure you have Python 3.8+ and PyTorch installed.
-2.  **Dependencies**: Install required packages:
+1.  **Clone this repository or download the source code**.
+2.  **Environment**: Ensure you have Python 3.8+ and PyTorch installed.
+3.  **Dependencies**: Install required packages:
     ```bash
     pip install -r requirements.txt
     ```
